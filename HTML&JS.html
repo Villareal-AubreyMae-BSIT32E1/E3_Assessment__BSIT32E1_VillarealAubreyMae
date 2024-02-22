@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    body {
+      background-color: beige;
+    }
+    h1, h2, h3 {
+      padding: 20px;
+    }
+    h3{
+        color: brown;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+    li {
+      list-style-type: disc; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to...</h1>
+  <p>This is a paragraph...</p>
+  <img src="Avril.jpg">
+  
+  <ol>
+    <li>WISH YOU WERE HERE</li>
+    <li>COMPLICATED</li>
+    <li>SKATER BOY</li>
+  </ol>
+  <p>Have a Soundtrip <a href="https://youtu.be/K1D5IpR4hk4?si=lpnJxlB6Gbp96j6e">  Watch my IDOL! </a></p>
+
+  <h3> Avril Lavigne is an Icon!</h3>
+
+ <button onclick="checkNumber()">Check Number</button>
+ <p id="result"></p>
+ <script>
+   function checkNumber() {
+     var number = prompt("Enter number:");
+     
+     if (isNaN(number)) {
+       document.getElementById("result").textContent = "Invalid input. Please enter a valid number.";
+       return;
+     }
+     number = Number(number);
+     if (number % 2 === 0) {
+       document.getElementById("result").textContent = number + " is even.";
+     } else {
+       document.getElementById("result").textContent = number + " is odd.";
+     }
+   }
+ </script>
+</body>
+</html>
+
